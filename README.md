@@ -127,3 +127,27 @@ LP(p) = (&sum; x^p ) ^ 1/p
 Max Pool = LP( &infty; )
 
 Avg Pool = LP(1)/n
+
+
+
+
+
+<mrow>
+<mstyle displaystyle=’true’>
+<munderover>
+<mo>&sum;</mo>
+<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>&infty;</mi>
+</munderover>
+<msup><mi>x</mi><mi>i</mi></msup>
+</mstyle>
+<mo>+</mo>
+<mstyle displaystyle=’false’>
+<munderover>
+<mo>&sum;</mo>
+<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+<mi>&infty;</mi>
+</munderover>
+<msup><mi>x</mi><mi>i</mi></msup>
+</mstyle>
+</mrow>
