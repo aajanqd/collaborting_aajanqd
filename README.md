@@ -103,8 +103,8 @@ Where the first entry in the matrix is the inner product between B and A1, the s
 
 This results in the following matrix:
 
-| col1 | col2 | col3 |
-| - | - | - |
+| col1 | col2 | col3 | col4 | col5 |
+| - | - | - | - | - |
 | 4 | 7 | 10 | 6 | 3 |
 | 9 | 17 | 25 | 16 | 8 |
 | 11 | 23 | 34 | 23 | 11 |
