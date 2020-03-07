@@ -97,4 +97,16 @@ This results in the matrix:
 
 Where the first entry in the matrix is the inner product between B and A1, the second entry between between B and A2, etc.
 
-&sum;
+### d
+
+
+
+This results in the following matrix:
+
+| col1 | col2 | col3 |
+| - | - | - |
+| 4 | 7 | 10 | 6 | 3 |
+| 9 | 17 | 25 | 16 | 8 |
+| 11 | 23 | 34 | 23 | 11 |
+| 7 | 16 | 24 | 17 | 8 |
+| 2 | 6 | 9 | 7 | 3 |
