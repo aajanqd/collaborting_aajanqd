@@ -121,6 +121,11 @@ torch.nn.MaxPool2d(kernel_size, stride=None, padding=0, dilation=1, return_indic
 
 ### c
 
+| col1 | col2 |
+| - | - |
+| 109 | 92 |
+| 110 | 85 |
+
 ### d
 LP(p) = (&sum; x^p ) ^ 1/p
 
