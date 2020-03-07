@@ -110,3 +110,16 @@ This results in the following matrix:
 | 11 | 23 | 34 | 23 | 11 |
 | 7 | 16 | 24 | 17 | 8 |
 | 2 | 6 | 9 | 7 | 3 |
+
+# 1.2 Pooling
+### a
+torch.nn.functional.lp_pool2d(input, norm_type, kernel_size, stride=None, ceil_mode=False)
+torch.nn.functional.avg_pool2d(input, kernel_size, stride=None, padding=0, ceil_mode=False, count_include_pad=True, divisor_override=None)
+torch.nn.MaxPool2d(kernel_size, stride=None, padding=0, dilation=1, return_indices=False, ceil_mode=False)
+
+### b
+
+### c
+
+### d
+LP(p) = (&sum; x^p)^1/p
