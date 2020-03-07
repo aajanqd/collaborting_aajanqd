@@ -118,6 +118,9 @@ torch.nn.functional.avg_pool2d(input, kernel_size, stride=None, padding=0, ceil_
 torch.nn.MaxPool2d(kernel_size, stride=None, padding=0, dilation=1, return_indices=False, ceil_mode=False)
 
 ### b
+Max: Yij = max(Sij)
+Avg: Yij = avg(Sij)
+LP: Yij = (&sum; x^p ) ^ 1/p
 
 ### c
 
