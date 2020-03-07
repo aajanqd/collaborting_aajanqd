@@ -124,30 +124,6 @@ torch.nn.MaxPool2d(kernel_size, stride=None, padding=0, dilation=1, return_indic
 ### d
 LP(p) = (&sum; x^p ) ^ 1/p
 
-Max Pool = LP( &infty; )
+Max Pool = LP(infinity)
 
 Avg Pool = LP(1)/n
-
-
-
-
-
-<mrow>
-<mstyle displaystyle=’true’>
-<munderover>
-<mo>&sum;</mo>
-<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
-<mi>&infty;</mi>
-</munderover>
-<msup><mi>x</mi><mi>i</mi></msup>
-</mstyle>
-<mo>+</mo>
-<mstyle displaystyle=’false’>
-<munderover>
-<mo>&sum;</mo>
-<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
-<mi>&infty;</mi>
-</munderover>
-<msup><mi>x</mi><mi>i</mi></msup>
-</mstyle>
-</mrow>
