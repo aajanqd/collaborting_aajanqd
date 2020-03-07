@@ -99,7 +99,7 @@ Where the first entry in the matrix is the inner product between B and A1, the s
 
 ### d
 
-
+![](IMG_0723.jpg)
 
 This results in the following matrix:
 
