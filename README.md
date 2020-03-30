@@ -1,117 +1,57 @@
 # 1.1 Convolution
-### a
+### 1
 
 The equation to be used is:
 
-n-f+1
-
-Where n is the dimension of the matrix, f is the dimension of the filter, p is the padding, and s is the stride.
-n = 5, and f = 3. Thus:
-
-5-3+1 = 3.
-
-This convolution will result in a 3x3 matrix.
-
-### b
-
-The full equation is:
-
 (n-f+2p)/s + 1
 
-Where p is the padding and s is the stride. Since p = 0 and s = 1, this results in the same equation as used above.
+64x111x111 -> 4x234x234
 
-### c
+x-dimension: 64 -> 4
+n = 64, f = 61, p = 0, s = 1
 
-We will take the inner product of B with each one of the following sub-matrices of A:
+(64-61+2(0))/1 + 1 = 3 + 1 = 4
 
-##### A1
-| col1 | col2 | col3 |
-| - | - | - |
-| 4 | 5 | 2 |
-| 3 | 3 | 2 |
-| 4 | 3 | 4 |
+y-dimension: 111 -> 234
+n = 111, f = 2, p = 62, s = 1
 
-##### A2
-| col1 | col2 | col3 |
-| - | - | - |
-| 5 | 2 | 2 |
-| 3 | 2 | 2 |
-| 3 | 4 | 1 |
+(111-2+2(62))/1 + 1 = 109+ 124 + 1 = 234
 
-##### A3
-| col1 | col2 | col3 |
-| - | - | - |
-| 2 | 2 | 1 |
-| 2 | 2 | 4 |
-| 4 | 1 | 1 |
+z-dimension: same as y-dimension
 
-##### A4
-| col1 | col2 | col3 |
-| - | - | - |
-| 3 | 3 | 2 |
-| 4 | 3 | 4 |
-| 5 | 1 | 4 |
+### 2
 
-##### A5
-| col1 | col2 | col3 |
-| - | - | - |
-| 3 | 2 | 2 |
-| 3 | 4 | 1 |
-| 1 | 4 | 1 |
+256x56x56 -> 14x126x126
 
-##### A6
-| col1 | col2 | col3 |
-| - | - | - |
-| 2 | 2 | 4 |
-| 4 | 1 | 1 |
-| 4 | 1 | 2 |
+x-dimension: 256 -> 14
+n = 256, f = 243, p = 0, s = 1
 
-##### A7
-| col1 | col2 | col3 |
-| - | - | - |
-| 4 | 3 | 4 |
-| 5 | 1 | 4 |
-| 5 | 1 | 3 |
+(256-243+2(0))/1 + 1 = 13 + 1 = 14
 
-##### A8
-| col1 | col2 | col3 |
-| - | - | - |
-| 3 | 4 | 1 |
-| 1 | 4 | 1 |
-| 1 | 3 | 1 |
+y-dimension: 56 -> 126
+n = 56, f = 3, p = 36, s = 1
 
-##### A9
-| col1 | col2 | col3 |
-| - | - | - |
-| 4 | 1 | 1 |
-| 4 | 1 | 2 |
-| 3 | 1 | 4 |
+(56-3+2(36))/1 + 1 = 53 + 72 + 1 = 126
 
-This results in the matrix:
+z-dimension: same as y-dimension
 
-| col1 | col2 | col3 |
-| - | - | - |
-| 109 | 92 | 72 |
-| 108 | 85 | 74 |
-| 110 | 74 | 79 |
+### 3
 
-Where the first entry in the matrix is the inner product between B and A1, the second entry between between B and A2, etc.
+256x56x56 -> 42x72x72
 
-### d
+x-dimension: 256 -> 42
+n = 256, f = 215, p = 0, s = 1
 
-![](IMG_0723.jpg)
+(256-215+2(0))/1 + 1 = 41 + 1 = 42
 
-This results in the following matrix:
+y-dimension: 56 -> 72
+n = 56, f = 3, p = 9, s = 1
 
-| col1 | col2 | col3 | col4 | col5 |
-| - | - | - | - | - |
-| 4 | 7 | 10 | 6 | 3 |
-| 9 | 17 | 25 | 16 | 8 |
-| 11 | 23 | 34 | 23 | 11 |
-| 7 | 16 | 24 | 17 | 8 |
-| 2 | 6 | 9 | 7 | 3 |
+(56-3+2(9))/1 + 1 = 53 + 18 + 1 = 72
 
-# 1.2 Pooling
+z-dimension: same as y-dimension
+
+# 1.2 Dropout
 ### a
 torch.nn.functional.lp_pool2d(input, norm_type, kernel_size, stride=None, ceil_mode=False)
 torch.nn.functional.avg_pool2d(input, kernel_size, stride=None, padding=0, ceil_mode=False, count_include_pad=True, divisor_override=None)
