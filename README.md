@@ -80,3 +80,8 @@ The dropout technique used in neural networks is more or less the equivalent of 
 The dropout technique is a useful form of regularization with two distinct advantages: a) it's computationally inexpensive, and b) it is not limited to any specific type of model.
 
 
+# 1.2 Batch Norm
+### 1
+A mini-batch is a subset of your training data. For example, if you like to train your model to identify different types of dogs, you may begin with 1000 pictures of dogs. A mini-batch might be 10 (or 20, or 50, or 100) of those images.
+
+### 2
