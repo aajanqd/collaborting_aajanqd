@@ -69,17 +69,11 @@ n = 56, f = 3, p = 9, s = 1
 z-dimension: same as y-dimension
 
 # 1.2 Dropout
-### a
-torch.nn.functional.lp_pool2d(input, norm_type, kernel_size, stride=None, ceil_mode=False)
-torch.nn.functional.avg_pool2d(input, kernel_size, stride=None, padding=0, ceil_mode=False, count_include_pad=True, divisor_override=None)
-torch.nn.MaxPool2d(kernel_size, stride=None, padding=0, dilation=1, return_indices=False, ceil_mode=False)
+### 1
+torch.nn.Dropout() (default probability = 0.5)
 
-### b
-Max: Y_ij = max(S_ij)
-
-Avg: Y_ij = avg(S_ij)
-
-LP: Y_ij = (&sum; S_ij^p ) ^ 1/p
+### 2
+The dropout technique used in neural networks is more or less the equivalent to the bagging technique used in standard machine learning aglorithms.
 
 ### c
 
